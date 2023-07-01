@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Bitcoin Price Prediction</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="static/images/loading.gif" alt="" /></div>
+    </div>
+    <!-- end loader -->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="active" href="#top">Home</a>
+        <a href="#graph">Graphs</a>
+        <a href="#predict">Predict</a>
+        <a href="#about">About Us</a>
+    </div>
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div id = "top" class="head-top">
+            <div class="container-fluid">
+                <div class="row d_flex">
+                    <div class="col-sm-3">
+                        <div class="logo">
+                            <a href="#top">BITCOIN</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="email text_align_right">
+                            <li>
+                                <button class="openbtn" onclick="openNav()"><img src="static/images/menu_btn.png"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start slider section -->
+    <div id="top_section" class=" banner_main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container-fluid">
+                                    <div class="carousel-caption relative">
+                                        <div class="row d_flex">
+                                            <div class="col-md-6">
+                                                <div class="con_img">
+                                                    <figure><img class="img_responsive" src="static/images/top_img.png" alt="#" /></figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="bluid">
+                                                    <h1>
+                                                        Bitcoin Price Prediction <br>
+                                                        using Prophet
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end slider section -->
+    <!-- info -->
+    <div class="wallet">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div id="wa_hover" class="wallet_box text_align_center">
+                        <h3>DIRECT TRANSFER</h3>
+                        <p>
+                            Transactions directly take place between users that is the sender and receiver.
+                            No third party involved there. Thus, it eliminates the fees for involving an intermediary.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div id="wa_hover" class="wallet_box text_align_center">
+                        <h3>GREATER LIQUIDITY</h3>
+                        <p>
+                            While converting to other real-world currencies bitcoin retains most of it values while other
+                            cryptocurrencies lost their value. <br><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div id="wa_hover" class="wallet_box text_align_center">
+                        <h3>INTERNATIONAL TRANSACTIONS </h3>
+                        <p>
+                            Bitcoin is the easiest method to initiate an international transaction.
+                            It does not charge any extra fees and settle immediately to a receiver.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div id="wa_hover" class="wallet_box text_align_center">
+                        <h3>SECURITY</h3>
+                        <p>
+                            Bitcoin has very strong security and it is impossible to counterfeit or cheat the bitcoin payment network.  <br><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end info -->
+
+    <!-- graph -->
+    <div id = "graph" class="testimonial">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="border_testi">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="titlepage text_align_center">
+                                    <h2>BITCOIN PRICE</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d_flex">
+                            <div class="col-md-10 offset-md-1">
+                                <div id="testimo" class="carousel slide our_testimonial" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="container" style="display: block; align-items: center;">
+                                                <!-- Graph - Normal -->
+                                                <div id="plot-normal" style="display: block; align-self: center;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end graph -->
+    
+    <!-- graph -->
+    <div id = "graph" class="testimonial">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="border_testi">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="titlepage text_align_center">
+                                    <h2>BITCOIN PRICE TRENDS</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d_flex">
+                            <div class="col-md-12 offset-md-1">
+                                <div id="testimo" class="carousel slide our_testimonial" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="container" style="display: block; align-items: center;">
+                                                <!-- Graph - Multi -->
+                                                <div id="plot-multi" style="display: block; align-self: center;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end graph -->
+    
+    <!-- predict -->
+    <div id="predict" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about_border">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="titlepage text_align_left">
+                                    <h1>Bitcoin Price Prediction using Prophet</h1>
+                                </div><br>
+                                <!-- Form to select date -->
+                                <form method="POST" action="/">
+                                    <label for="selected_date">Select a Date:</label>
+                                    <input type="date" id="selected_date" name="selected_date" value="{{ selected_date }}">
+                                    <input type="submit" value="Get Prediction">
+                                </form>
+                                {% if prediction %}
+                                    <h1>Prediction for {{ selected_date }}: $ {{ prediction }}</h1>
+                                    <!-- Indicator Graph for predicted in refernce to today -->
+                                    <div id="plot-specific">
+                                    </div>
+
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about_img">
+                                    <figure><img class="img_responsive" src="static/images/about2.png" alt="#" /></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end predict -->
+
+    <!-- footer -->
+    <footer>
+        <div id = "about" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="logo_bottom">About Us</a>
+                    </div>
+               <div class = "col-md-3 col-sm-6">
+                        <div class="Informa helpful">
+                            <h3>RISHABH RATHI</h3>
+                            <p>
+                                <br><br>
+                                20BCE10372<br>
+                                VIT BHOPAL
+                            </p>
+                        </div>
+                </div>
+                <div class = "col-md-3 col-sm-6">
+                    <div class="Informa helpful">
+                        <h3>AGASTEESH R</h3>
+                        <p>
+                            <br><br>
+                            20BCE10177<br>
+                            VIT BHOPAL
+                        </p>
+                    </div>
+            </div>
+            <div class = "col-md-3 col-sm-6">
+                <div class="Informa helpful">
+                    <h3>Pulkit K Golay</h3>
+                    <p>
+                        <br><br>
+                        20BCE11063<br>
+                        VIT BHOPAL
+                    </p>
+                </div>
+        </div>
+                <div class = "col-md-3 col-sm-6">
+                    <div class="Informa ">
+                        <h3>B Phaneendra Kumar Suryadevara</h3>
+                        <p>
+                            20BCE0618<br>
+                            VIT VELLORE
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text_align_center ">
+               <div class="container ">
+                  <div class="row ">
+                     <div class="col-md-12 ">
+                        <p>© 2023 All Rights Reserved.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </footer>
+      <!-- end footer -->
+
+    <button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">
+        <img width="50" height="50" src="static/images/btn.png" alt="Top">
+    </button>
+
+      <!-- Javascript files-->
+      <script src="static/js/jquery.min.js "></script>
+      <script src="static/js/bootstrap.bundle.min.js "></script>
+      <script src="static/js/jquery-3.0.0.min.js "></script>
+      <script src="static/js/custom.js "></script>
+      <script src="static/js/mybtn.js "></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script>
+        var plot_data = {{ plot_json | safe }};
+        Plotly.newPlot('plot-normal', plot_data.data, plot_data.layout);
+
+        var plot_data_multi = {{ plot_json_multi | safe }};
+        Plotly.newPlot('plot-multi', plot_data_multi.data, plot_data_multi.layout);
+
+        var plot_data_specific = {{ plot_json_specific | safe }};
+        Plotly.newPlot('plot-specific', plot_data_specific.data, plot_data_specific.layout);
+    </script>   
+   </body>
+</html>
